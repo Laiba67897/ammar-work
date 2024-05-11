@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive About Us Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="heading">
+       <h1>About Us</h1>
+       <p>A festival is an event celebrated by a community and centering on some characteristic aspect or aspects of that community and its religion or cultures</p> 
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+             <img src="./pixlr-image-generator-2a7de13f-3ee3-49da-be02-72a7ae7b56b3.png">
+            </div>
+            <div class="about-content">
+                <h2>Traditions</h2>
+                <p id="mainText">Welcome to DreamWeaver, your ultimate destination for exploring the richness and diversity of religious festivals around the world. <br>
+
+                    At DreamWeaver, we believe that religious festivals are not merely occasions for celebration; they are profound expressions of faith, culture, and community. Our platform is dedicated to illuminating the beauty, significance, and traditions behind these festivals, transcending geographical boundaries to foster understanding and appreciation.</p>
+
+                    <p id="moreText">Whether you're intrigued by the vibrant colors of Holi in India, the solemnity of Ramadan, or the jubilant spirit of Christmas, DreamWeaver is your gateway to a kaleidoscope of experiences. Through captivating articles, stunning visuals, and immersive multimedia content, we invite you to embark on a journey of discovery and enlightenment. <br>
+
+                        Our team of passionate writers, photographers, and cultural enthusiasts work tirelessly to curate an authentic and insightful portrayal of each festival, ensuring that every visit to DreamWeaver is an enriching and inspiring experience. <br>
+                        
+                        Join us as we celebrate the tapestry of human spirituality and cultural heritage. Together, let's weave dreams of unity, harmony, and understanding through the universal language of festivals. <br>
+                        
+                        Welcome to DreamWeaver – where every festival is a celebration of the human spirit.
+                        </p>
+
+
+
+                        <a href="#" class="read-more" onclick="readMore()" id="readMoreBtn"
+                        >Read More</a>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        function readMore() {
+          var moreText = document.getElementById("moreText");
+          var btnText = document.getElementById("readMoreBtn");
+  
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btnText.innerHTML = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btnText.innerHTML = "Read More";
+          }
+        }
+      </script>
+    
+</body>
+</html>
